@@ -1,0 +1,29 @@
+{
+  "name": "react-native-outline-input",
+  "version": "1.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "p-patch": "npm version patch && npm publish",
+    "p-major": "npm version major && npm publish",
+    "p-minor": "npm version minor && npm publish",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "react": "^16.8.3",
+    "react-native": "^0.60.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.43",
+    "@types/react-native": "^0.63.2",
+    "typescript": "^3.8.3"
+  },
+  "keywords": [
+    "outlineinput",
+    "react-native-outline-input"
+  ],
+  "author": "Alperen Çerezci",
+  "license": "ISC"
+}
