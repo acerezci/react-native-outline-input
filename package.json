@@ -20,6 +20,10 @@
     "@types/react-native": "^0.63.2",
     "typescript": "^3.8.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acerezci/react-native-outline-input"
+  },
   "keywords": [
     "outlineinput",
     "react-native-outline-input"
