@@ -3,8 +3,8 @@
 
 This repository is react-native animated input component
 
-| ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/59888174/88774626-592d7780-d18c-11ea-83a7-e0d2676dfe2c.gif) | ![Screen Shot 2020-07-29 at 12 00 24](https://user-images.githubusercontent.com/59888174/88780137-381c5500-d193-11ea-81d7-327527da8338.png) |
-|----|----|
+| ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/59888174/88774626-592d7780-d18c-11ea-83a7-e0d2676dfe2c.gif) |
+|----|
 
 
 
@@ -15,6 +15,48 @@ This repository is react-native animated input component
 
 or
 > yarn add react-native-outline-input
+
+## Usage
+
+```js
+import React, { useState } from 'react';
+import { SafeAreaView } from 'react-native';
+import OutlineInput from 'react-native-outline-input';
+
+const App = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  return (
+    <SafeAreaView>
+      <OutlineInput
+        value={email}
+        onChangeText={(e: string) => setEmail(e)}
+        label="Username"
+        activeValueColor="#6c63fe"
+        activeBorderColor="#6c63fe"
+        activeLabelColor="#6c63fe"
+        passiveBorderColor="#bbb7ff"
+        passiveLabelColor="#bbb7ff"
+        passiveValueColor="#bbb7ff"
+      />
+      <OutlineInput
+        value={password}
+        onChangeText={(e: string) => setPassword(e)}
+        label="Username"
+        activeValueColor="#6c63fe"
+        activeBorderColor="#6c63fe"
+        activeLabelColor="#6c63fe"
+        passiveBorderColor="#bbb7ff"
+        passiveLabelColor="#bbb7ff"
+        passiveValueColor="#bbb7ff"
+      />
+    </SafeAreaView>
+  );
+};
+
+export default App;
+```
 
 ## Props
 
